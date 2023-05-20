@@ -1,0 +1,95 @@
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #333;
+  }
+
+  nav li {
+    display: inline-block;
+    position: relative;
+  }
+
+  nav a {
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
+    color: white;
+
+  }
+
+  nav .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.5em;
+    padding: 0;
+    background-color: black;
+    border: 1px solid #ccc;
+  }
+
+  nav .submenu li {
+    display: block;
+  }
+
+  nav li:hover > .submenu {
+    display: block;
+  }
+
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
+  color: #fff;
+}
+
+.box-container div {
+  float: right;
+  margin-top: 60px;
+}
+
+.box-container h2 {
+  padding-bottom: 10px;
+}
+
+.box-container form {
+  margin-top: 30px;
+  display: flex;
+}
+
+.box-container input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.box-container button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+h2 {
+  padding-bottom: 10px;
+  text-align: center; /* Đưa hai cụm từ vào giữa của phần tử h2 */
+}
+
+h2 span {
+  display: inline-block; /* Đưa hai cụm từ vào cùng một dòng */
+}
+
+h2 span:first-child {
+  margin-right: 10px; /* Thiết lập khoảng cách giữa 'RỰC RỠ SẮC' và '<span><u>VÀNG</u></span>' */
+}
+
+h2 span:last-child {
+  text-decoration: underline;
+}
